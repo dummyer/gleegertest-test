@@ -1,0 +1,149 @@
+.topbar {
+  width: auto;
+  height: 64px;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.topbar .topbarWrapper {
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  background-color: white !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbarWrapper .topLeft .logo {
+  font-weight: bold;
+  color: blue;
+  width: 140px;
+  height: 35px;
+  cursor: pointer;
+  align-items: center;
+  background-color: transparent;
+}
+
+.topbarWrapper .topLeft {
+  flex: 4;
+  display: flex;
+  background-color: transparent;
+}
+
+.labelWrapper {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 43px;
+  background-color: transparent;
+  align-items: center;
+}
+
+.labelSum {
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.labelSum .title {
+  display: flex;
+  background-color: transparent;
+}
+
+.labelSum .title .icon {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  background-color: transparent;
+}
+
+.labelSum .title .name {
+  font-size: 80%;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.labelSum .sum {
+  font-size: 100%;
+  background-color: transparent;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+  flex: 5;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+.topMenu {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.topbarIconContainer {
+  position: relative;
+  margin-right: 10px;
+  color: #555555;
+  background-color: transparent;
+}
+
+.topbarIcon {
+  font-size: 1vw !important;
+  background-color: transparent;
+}
+
+.topbarIconDropDown {
+  color: #216efb;
+  background-color: transparent;
+}
+
+.topbarIconContainer:hover {
+  cursor: pointer;
+}
+
+.separator {
+  border-right: solid rgb(196, 196, 196) 1px;
+  padding-right: 10px;
+}
+
+.separatorOpacity {
+  border-right: solid #f2f2f2 1px;
+  padding-right: 10px;
+}
+
+.badgeButton {
+  color: #216efb;
+  border: solid #216efb 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 0.8vw;
+  background-color: transparent;
+}
+
+.topMenuWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.topMenuWrapper .option {
+  margin-right: 20px;
+  font-size: 0.8vw;
+  -webkit-user-select: none; /* Safari */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -moz-user-select: none; /* Old versions of Firefox */
+  user-select: none; /* Non-prefixed version*/
+  background-color: transparent;
+}
+
+.topMenuWrapper .option:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}

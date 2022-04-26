@@ -1,0 +1,78 @@
+.sidebarContainer {
+  width: 250px;
+  height: calc(100vh - 64px);
+  background-color: transparent;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sidebarContainerWrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: calc(100vh - 84px);
+  overflow-y: auto;
+}
+.sidebarContainerWrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-user-select: none; /* Safari */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -moz-user-select: none; /* Old versions of Firefox */
+  user-select: none; /* Non-prefixed version*/
+}
+
+.sidebarContainerWrapper ul > li {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  color: #4d4d4d;
+  border-radius: 5px;
+}
+
+.sidebarContainerWrapper ul > li:hover {
+  background-color: #c4d9ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sidebarContainerWrapper ul > li.active {
+  background-color: #216efb;
+  color: white;
+}
+
+.sidebarMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebarMenu .iconLabel {
+  font-size: 15px;
+}
+
+.info {
+  color: #ff6f6e;
+}
+
+.checked {
+  color: #54cba9;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}

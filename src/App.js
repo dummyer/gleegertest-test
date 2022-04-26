@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/header/header";
+import React, { useState } from "react";
+import Sidebar from "./components/sidebar/sidebar";
+import Home from "./containers/home/home";
 
-function App() {
+const App = () => {
+  const [sideBarOpen, setSideBarOpen] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Header />
+      <div className="containers">
+        <Sidebar />
+        <Home />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
