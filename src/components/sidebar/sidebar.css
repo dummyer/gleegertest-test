@@ -1,3 +1,8 @@
+@media only screen and (max-device-width: 768px) {
+  .sidebarContainer {
+    display: none;
+  }
+}
 .sidebarContainer {
   width: 250px;
   height: calc(100vh - 64px);
@@ -63,16 +68,4 @@
 
 .checked {
   color: #54cba9;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background: transparent !important;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #bbb;
-  border-radius: 10px;
 }

@@ -6,8 +6,71 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function home() {
   return (
     <div className="page">
+      <div className="groupContainer-mobile">
+        <span>
+          <b>Last Login:</b> 30/01/20, 16:28:34 (SG), Chrome
+        </span>
+
+        <div className="withdrawLimit">
+          <div className="row">
+            <div className="col labelWithdraw">
+              <img
+                src="/dist/assets/icons/ic_withdraw.svg"
+                alt=""
+                className="src"
+              />
+              <span>My Withdraw Limits</span>
+            </div>
+          </div>
+          <div className="listWithdrawLimit">
+            <div className="row">
+              <div className="col">Daily</div>
+              <div className="col text-end">
+                7,500,000 of <b>8,888,888 USD</b>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <div className="progressbar">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="listWithdrawLimit">
+            <div className="row">
+              <div className="col">Weekly</div>
+              <div className="col text-end">
+                7,500,000 of <b>8,888,888 USD</b>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <div className="progressbar">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="listWithdrawLimit">
+            <div className="row">
+              <div className="col">Montly</div>
+              <div className="col text-end">
+                7,500,000 of <b>8,888,888 USD</b>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <div className="progressbar">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="pageContent">
-        <div className="containers">
+        <div className="containers welcomeStatusCard">
           <div className="leftCol">
             <h2 className="welcomeLabel">Welcome.</h2>
           </div>
@@ -90,8 +153,9 @@ function home() {
 
         {/*  */}
         <br></br>
+
         <div className="containers">
-          <div className="leftCol">
+          <div className="leftCol lastLogin">
             <div className="container">
               <div className="groupContainer">
                 <div className="row subTitle">
@@ -114,93 +178,100 @@ function home() {
                   </div>
                 </div>
               </div>
-              <div className="row subTitle">
-                <div className="col text-left">
-                  <div className="row">
-                    <div className="col text-left">
-                      <h3>My Products</h3>
-                    </div>
-                    <div className="col text-end">
-                      <a href="#">See all Activities</a>
+
+              <div className="myProducts">
+                <div className="row subTitle">
+                  <div className="col text-left">
+                    <div className="row">
+                      <div className="col text-left">
+                        <h3>My Products</h3>
+                      </div>
+                      <div className="col text-end">
+                        <a href="#">See all Activities</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="subTitleContent">
-                <div className="row listContent">
-                  <div className="col wLeft">
-                    <div className="row">
-                      <div className="col text-left">
-                        <b>ConvertNOW</b>
+                <div className="subTitleContent">
+                  <div className="row listContent">
+                    <div className="col wLeft">
+                      <div className="row">
+                        <div className="col text-left">
+                          <b>ConvertNOW</b>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col text-left">
+                          <span className="smallLabel">Required</span>
+                        </div>
                       </div>
                     </div>
-                    <div className="row">
-                      <div className="col text-left">
-                        <span className="smallLabel">Required</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col text-end wRight">
-                    <label className="labelSwitch">Enabled</label>
-                    <label className="switch">
-                      <input type="checkbox" defaultChecked="false" disabled />
-                      <span className="slider round"></span>
-                    </label>
-                  </div>
-                </div>
-                <div className="row listContent">
-                  <div className="col wLeft">
-                    <div className="row">
-                      <div className="col text-left">
-                        <b>ConvertNOW</b>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col text-left">
-                        <span className="smallLabel">Required</span>
-                      </div>
+                    <div className="col text-end wRight">
+                      <label className="labelSwitch">Enabled</label>
+                      <label className="switch">
+                        <input
+                          type="checkbox"
+                          defaultChecked="false"
+                          disabled
+                        />
+                        <span className="slider round"></span>
+                      </label>
                     </div>
                   </div>
-                  <div className="col text-end wRight">
-                    <label className="labelSwitch">Enabled</label>
-                    <label className="switch">
-                      <input type="checkbox" defaultChecked="true" />
-                      <span className="slider round"></span>
-                    </label>
-                  </div>
-                </div>
-                <div className="row listContent lastListContent">
-                  <div className="col wLeft">
-                    <div className="row">
-                      <div className="col text-left">
-                        <b>ConvertNOW</b>
+                  <div className="row listContent">
+                    <div className="col wLeft">
+                      <div className="row">
+                        <div className="col text-left">
+                          <b>ConvertNOW</b>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col text-left">
+                          <span className="smallLabel">Required</span>
+                        </div>
                       </div>
                     </div>
-                    <div className="row">
-                      <div className="col text-left">
-                        <span className="smallLabel">Required</span>
-                      </div>
+                    <div className="col text-end wRight">
+                      <label className="labelSwitch">Enabled</label>
+                      <label className="switch">
+                        <input type="checkbox" defaultChecked="true" />
+                        <span className="slider round"></span>
+                      </label>
                     </div>
                   </div>
-                  <div className="col text-end wRight">
-                    <label className="labelSwitch">Enabled</label>
-                    <label className="switch">
-                      <input type="checkbox" defaultChecked="true" disabled />
-                      <span className="slider round"></span>
-                    </label>
+                  <div className="row listContent lastListContent">
+                    <div className="col wLeft">
+                      <div className="row">
+                        <div className="col text-left">
+                          <b>ConvertNOW</b>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col text-left">
+                          <span className="smallLabel">Required</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col text-end wRight">
+                      <label className="labelSwitch">Enabled</label>
+                      <label className="switch">
+                        <input type="checkbox" defaultChecked="true" disabled />
+                        <span className="slider round"></span>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="rightCol">
+          <div className="rightCol personalAccount">
             <div className="container">
               <div className="groupContainer">
                 <div className="row">
                   <div className="col text-left">
                     <div className="row">
                       <div className="col text-left">
-                        <h3>Last Login</h3>
+                        <h3>Personal Account</h3>
                       </div>
                     </div>
                   </div>
