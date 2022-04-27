@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import { Circle } from "@mui/icons-material";
+import { Circle, ArrowDropDown } from "@mui/icons-material";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function home() {
@@ -211,10 +211,20 @@ function home() {
                       <table className="table table-borderless">
                         <thead>
                           <tr>
-                            <th>Assets</th>
-                            <th>Total</th>
-                            <th>Available</th>
-                            <th>Locked</th>
+                            <th>
+                              Assets
+                              <ArrowDropDown className="arrowFilter active" />
+                            </th>
+                            <th className="text-end">
+                              Total <ArrowDropDown className="arrowFilter" />
+                            </th>
+                            <th className="text-end">
+                              Available
+                              <ArrowDropDown className="arrowFilter" />
+                            </th>
+                            <th className="text-end">
+                              Locked <ArrowDropDown className="arrowFilter" />
+                            </th>
                             <th></th>
                           </tr>
                         </thead>
@@ -229,9 +239,21 @@ function home() {
                                 <span className="label">SP$</span>
                               </div>
                             </td>
-                            <td>888,8888,888.00</td>
-                            <td>888,8888,888.00</td>
-                            <td>888,8888,888.00</td>
+                            <td className="text-end">
+                              <span className="amountText">
+                                888,8888,888.00
+                              </span>
+                            </td>
+                            <td className="text-end">
+                              <span className="amountText">
+                                888,8888,888.00
+                              </span>
+                            </td>
+                            <td className="text-end">
+                              <span className="amountText">
+                                888,8888,888.00
+                              </span>
+                            </td>
                             <td>...</td>
                           </tr>
                           <tr className="listTableContent">
@@ -246,27 +268,529 @@ function home() {
                             </td>
                             <td>
                               <div className="row">
-                                <div className="col">888,8888,888.00</div>
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
                               </div>
                               <div className="row">
-                                <div className="col">~888,888,888.88 USD</div>
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
                               </div>
                             </td>
                             <td>
                               <div className="row">
-                                <div className="col">888,8888,888.00</div>
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
                               </div>
                               <div className="row">
-                                <div className="col">~888,888,888.88 USD</div>
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
                               </div>
                             </td>
                             <td>
                               <div className="row">
-                                <div className="col">888,8888,888.00</div>
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
                               </div>
                               <div className="row">
-                                <div className="col">
-                                  <h6>~888,888,888.88 USD</h6>
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr className="listTableContent">
+                            <td>
+                              <div className="labelLogo">
+                                <img
+                                  className="logoLabel"
+                                  src="/dist/assets/icons/ic_btc.svg"
+                                />
+                                <span className="label">BTC</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr className="listTableContent">
+                            <td>
+                              <div className="labelLogo">
+                                <img
+                                  className="logoLabel"
+                                  src="/dist/assets/icons/ic_btc.svg"
+                                />
+                                <span className="label">BTC</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr className="listTableContent">
+                            <td>
+                              <div className="labelLogo">
+                                <img
+                                  className="logoLabel"
+                                  src="/dist/assets/icons/ic_btc.svg"
+                                />
+                                <span className="label">BTC</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr className="listTableContent">
+                            <td>
+                              <div className="labelLogo">
+                                <img
+                                  className="logoLabel"
+                                  src="/dist/assets/icons/ic_btc.svg"
+                                />
+                                <span className="label">BTC</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr className="listTableContent">
+                            <td>
+                              <div className="labelLogo">
+                                <img
+                                  className="logoLabel"
+                                  src="/dist/assets/icons/ic_btc.svg"
+                                />
+                                <span className="label">BTC</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr className="listTableContent">
+                            <td>
+                              <div className="labelLogo">
+                                <img
+                                  className="logoLabel"
+                                  src="/dist/assets/icons/ic_btc.svg"
+                                />
+                                <span className="label">BTC</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr className="listTableContent">
+                            <td>
+                              <div className="labelLogo">
+                                <img
+                                  className="logoLabel"
+                                  src="/dist/assets/icons/ic_btc.svg"
+                                />
+                                <span className="label">BTC</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr className="listTableContent">
+                            <td>
+                              <div className="labelLogo">
+                                <img
+                                  className="logoLabel"
+                                  src="/dist/assets/icons/ic_btc.svg"
+                                />
+                                <span className="label">BTC</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    888,8888,888.00
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col text-end">
+                                  <span className="amountText">
+                                    ~888,888,888.88 <b>USD</b>
+                                  </span>
                                 </div>
                               </div>
                             </td>

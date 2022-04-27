@@ -208,7 +208,7 @@ input:checked + .slider:before {
 
 tbody {
   display: block;
-  max-height: 600px;
+  max-height: calc(100vh - 50vh);
   overflow: auto;
 }
 thead,
@@ -222,6 +222,7 @@ thead {
 }
 thead tr th {
   background-color: #f2f2f2 !important;
+  cursor: pointer;
 }
 
 table {
@@ -247,4 +248,16 @@ table {
 
 .listTableContent td {
   vertical-align: middle;
+}
+
+.arrowFilter {
+  color: #a3a3a3;
+}
+
+.arrowFilter.active {
+  color: #216efb;
+}
+
+.amountText {
+  font-size: 0.8em;
 }

@@ -1,5 +1,10 @@
 import "./header.css";
-import { Person, Public, ArrowDropDown } from "@mui/icons-material";
+import {
+  Person,
+  Public,
+  ArrowDropDown,
+  Notifications,
+} from "@mui/icons-material";
 import React, { Component, useCallback } from "react";
 
 class Header extends Component {
@@ -11,6 +16,17 @@ class Header extends Component {
     return (
       <div class="topbar">
         <div className="topbarWrapper">
+          <div className="mobileTopbar">
+            <div className="row contentTopbarMobile">
+              <div className="col">
+                <Notifications className="topbarMobileIcon" />
+                <span className="notifBullet"></span>
+              </div>
+              <div className="col text-end">
+                <a href="#">LOG OUT</a>
+              </div>
+            </div>
+          </div>
           <div className="topLeft">
             <img
               src="/dist/assets/logo/sparrow_logo.svg"
