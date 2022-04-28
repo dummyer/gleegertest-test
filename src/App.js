@@ -8,7 +8,7 @@ const App = () => {
   const [sideBarOpen, setSideBarOpen] = useState(true);
 
   return (
-    <div className="">
+    <div>
       <Header />
       <div className="containers">
         <Sidebar />

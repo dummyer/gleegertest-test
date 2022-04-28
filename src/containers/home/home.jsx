@@ -3,6 +3,7 @@ import "./home.css";
 import { Circle, ArrowDropDown } from "@mui/icons-material";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 function home() {
   return (
     <div className="page">
@@ -24,9 +25,9 @@ function home() {
           </div>
           <div className="listWithdrawLimit">
             <div className="row">
-              <div className="col">Daily</div>
+              <div className="col"><span>Daily</span></div>
               <div className="col text-end">
-                7,500,000 of <b>8,888,888 USD</b>
+                <span> 7,500,000 of <b>8,888,888 USD</b></span>
               </div>
             </div>
             <div className="row">
@@ -39,9 +40,9 @@ function home() {
           </div>
           <div className="listWithdrawLimit">
             <div className="row">
-              <div className="col">Weekly</div>
+              <div className="col"><span>Weekly</span></div>
               <div className="col text-end">
-                7,500,000 of <b>8,888,888 USD</b>
+                <span> 7,500,000 of <b>8,888,888 USD</b></span>
               </div>
             </div>
             <div className="row">
@@ -54,9 +55,9 @@ function home() {
           </div>
           <div className="listWithdrawLimit">
             <div className="row">
-              <div className="col">Montly</div>
+              <div className="col"><span>Monthly</span></div>
               <div className="col text-end">
-                7,500,000 of <b>8,888,888 USD</b>
+                <span> 7,500,000 of <b>8,888,888 USD</b></span>
               </div>
             </div>
             <div className="row">
@@ -65,6 +66,13 @@ function home() {
                   <div></div>
                 </div>
               </div>
+            </div>
+          </div>
+
+
+          <div className="row">
+            <div className="col">
+              <span className="withdrawKeterangan">For higher limits, please <a href="#">submit</a> a request to our support team.</span>
             </div>
           </div>
         </div>

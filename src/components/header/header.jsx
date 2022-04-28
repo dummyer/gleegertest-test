@@ -27,14 +27,25 @@ class Header extends Component {
                 <a href="#">LOG OUT</a>
               </div>
             </div>
+
           </div>
+
           <div className="topLeft">
+
             <img
               src="/dist/assets/logo/sparrow_logo.svg"
               alt=""
               className="logo"
             />
             <div className="labelWrapperContainer">
+              <div className="welcomeMobile">
+                <div className="row">
+                  <div className="col"><b>Welcome.</b></div>
+                </div>
+                <div className="row">
+                  <div className="col"><span>eddie.yeo@gleeger.com</span></div>
+                </div>
+              </div>
               <div className="labelWrapper">
                 <div className="labelSum separatorOpacity">
                   <div className="title">

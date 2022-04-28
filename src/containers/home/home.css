@@ -13,7 +13,7 @@
     display: none !important;
   }
   .page {
-    height: calc(100vh - 64px) !important;
+    height: calc(100vh/2) !important;
     padding: 0 !important;
     overflow-y: auto;
 
@@ -36,15 +36,33 @@
     background-color: orange;
     width: 90%;
     /* Adjust with JavaScript */
-    height: 20px;
+    height: 1.5vh;
     border-radius: 10px;
   }
   .withdrawLimit .listWithdrawLimit {
     margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .withdrawLimit .withdrawKeterangan, .withdrawLimit a{
+    color: #B5B5B5 !important;
+    font-size: 14px !important;
+  }
+
+  .withdrawLimit .labelWithdraw span{
+    font-size: 4vw !important;
+  }
+  .withdrawLimit .labelWithdraw img{
+    width: 3vw !important;
+  }
+
+  .withdrawLimit .listWithdrawLimit span{
+    font-size: 2.5vw !important ;
   }
 
   .groupContainer-mobile span {
     margin-left: 20px;
+    font-size: 2vw;
   }
 
   .groupContainer-mobile .withdrawLimit {
@@ -71,6 +89,10 @@
     margin-top: 20px !important;
     background-color: #f2f2f2 !important;
   }
+}
+
+.welcomeStatusCard h2.welcomeLabel{
+  font-size: 3vw;
 }
 
 .groupContainer-mobile {
@@ -127,6 +149,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.statusCard .rightCol{
+  margin-left: 20px;
+}
+
 .statusCard .textCol {
   font-size: 15px;
 }
@@ -186,6 +213,24 @@
 
 .subTitleContent {
   margin-top: 10px;
+}
+.subTitleContent tr th, td{
+  font-size: 1vw;
+}
+
+.lastLogin .subTitle h3, .personalAccount h3{
+  font-size: 1.5vw;
+}
+.lastLogin .subTitleContent b, .lastLogin .subTitleContent span, .lastLogin .subTitleContent label{
+  font-size: 1vw;
+
+}
+.lastLogin .subTitle a{
+  font-size: 0.8vw;
+}
+
+.subTitleContent .arrowFilter{
+  font-size: 1.3vw;
 }
 
 .listContent {

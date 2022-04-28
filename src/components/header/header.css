@@ -19,6 +19,16 @@
     padding: 10px;
     border-bottom: 1px #f2f2f2 solid;
   }
+  .welcomeMobile {
+    padding: 10px;
+  }
+  .welcomeMobile b{
+    font-size: 5vw ;
+  }
+  .welcomeMobile span{
+    font-size: 3vw ;
+  }
+
   .topMenuWrapper {
     display: flex;
   }
@@ -82,6 +92,8 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+
+    padding-top: 15px;
   }
   .topMenuWrapper .option {
     background-color: #216efb !important;
@@ -98,12 +110,13 @@
   .labelWrapperContainer {
     width: calc(100vw);
     background-color: white;
-    padding: 20px;
-    overflow-x: auto;
-    padding-top: 10vh;
+    padding-top: 8vh;
+    overflow-x: hidden;
   }
   .labelWrapper {
+    padding: 20px;
     display: flex;
+    overflow-x: auto;
   }
   .labelWrapper .labelSum {
     width: 100%;
@@ -137,12 +150,6 @@
     display: flex;
   }
 
-  .topMenuWrapper {
-    align-items: flex-start;
-    display: flex;
-    justify-content: left;
-    padding-top: 15px;
-  }
 
   .topMenuWrapper ul {
     display: flex;
@@ -157,7 +164,7 @@
 
     width: 20vw;
     height: 20vw;
-    border-radius: 10px;
+    border-radius: 4vw;
     margin-right: 15px;
     font-size: 2vw;
     text-align: center;
@@ -175,18 +182,14 @@
     opacity: 0.5;
   }
 }
-/* Tablet ----------- */
-@media only screen and (max-width: 1187px) and (min-device-width: 768px) {
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 768px) {
   /* Styles */
   .mobileTopbar {
     display: none;
   }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1187px) {
-  /* Styles */
-  .mobileTopbar {
+  .welcomeMobile{
     display: none;
   }
   .minMaxSum {
