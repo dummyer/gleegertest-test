@@ -6,6 +6,15 @@
   .welcomeStatusCard {
     display: none !important;
   }
+  .bottomSheetPersonalAccount{
+    display: block !important;
+  }
+  .bottomSheetPersonalAccount .bottomSheetTabel{
+    background-color: #4D4D4D !important;
+    border-radius: 10px !important;
+  }
+
+
   .personalAccount {
     display: none !important;
   }
@@ -89,6 +98,10 @@
     margin-top: 20px !important;
     background-color: #f2f2f2 !important;
   }
+}
+
+.bottomSheetPersonalAccount{
+  display: none;
 }
 
 .welcomeStatusCard h2.welcomeLabel{

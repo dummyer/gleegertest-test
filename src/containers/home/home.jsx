@@ -2,11 +2,31 @@ import React from "react";
 import "./home.css";
 import { Circle, ArrowDropDown } from "@mui/icons-material";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BottomSheet } from 'mui-bottom-sheet';
 
 
-function home() {
+
+export const Home = () => {
   return (
+
     <div className="page">
+      <div className="bottomSheetPersonalAccount">
+
+        <BottomSheet className="bottomSheetTabel">
+          <div className="row">
+            <div className="col">
+              <img
+                src="/dist/assets/icons/ic_assets.svg"
+                alt=""
+                className="logo"
+                style={{ color: 'red' }}
+              />
+              My Assets
+            </div>
+          </div>
+        </BottomSheet>
+      </div>
+
       <div className="groupContainer-mobile">
         <span>
           <b>Last Login:</b> 30/01/20, 16:28:34 (SG), Chrome
@@ -75,6 +95,7 @@ function home() {
               <span className="withdrawKeterangan">For higher limits, please <a href="#">submit</a> a request to our support team.</span>
             </div>
           </div>
+
         </div>
       </div>
       <div className="pageContent">
@@ -889,4 +910,3 @@ function home() {
   );
 }
 
-export default home;
